@@ -1,0 +1,61 @@
+
+# Intelligent Student Assistant - Dependencies
+
+## Frontend Dependencies
+- React (^18.3.1)
+- React DOM (^18.3.1)
+- React Router DOM (^6.26.2)
+- TypeScript (^5.2.2)
+- Tailwind CSS (^3.4.1)
+- shadcn/ui components
+- lucide-react (^0.462.0)
+- date-fns (^3.6.0)
+- Sonner (^1.5.0)
+- TanStack React Query (^5.56.2)
+- class-variance-authority (^0.7.1)
+- clsx (^2.1.1)
+- cmdk (^1.0.0)
+- embla-carousel-react (^8.3.0)
+- input-otp (^1.2.4)
+- react-day-picker (^8.10.1)
+- react-hook-form (^7.53.0)
+- tailwind-merge (^2.5.2)
+- tailwindcss-animate (^1.0.7)
+- zod (^3.23.8)
+
+## Audio Processing Dependencies
+- Media Recorder API (browser built-in)
+- Web Audio API (browser built-in)
+
+## Speech-to-Text API Options
+- OpenAI Whisper API
+- Google Cloud Speech-to-Text
+- Azure Speech Service
+- (Choose based on requirements and budget)
+
+## AI/NLP Libraries for Content Processing
+- OpenAI GPT API
+- HuggingFace Transformers
+- TensorFlow.js or PyTorch (if using custom models)
+
+## Image Capture Dependencies
+- MediaDevices API (browser built-in)
+- WebRTC (for camera access)
+
+## Backend Options (if implementing full stack)
+- Node.js + Express
+- Python + FastAPI
+- Firebase (for simpler deployment)
+- Supabase (for simpler deployment)
+
+## Deployment and Infrastructure
+- Docker (for containerization)
+- Cloud provider (AWS/GCP/Azure)
+- Database (PostgreSQL/MongoDB)
+- Object storage (for audio files and images)
+
+## Development Tools
+- Vite (^5.2.3)
+- ESLint
+- Prettier
+
