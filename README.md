@@ -145,5 +145,4 @@ Inspired by the vision of smarter, accessible education through technology.
 ## 📬 Contact
 
 For questions, feedback, or collaborations, open an issue or reach out via GitHub.
-```
 
