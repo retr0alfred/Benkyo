@@ -1,4 +1,3 @@
-```
 # 📚 Benkyo — AI-Powered Learning Assistant
 
 **Benkyo** is an intelligent classroom assistant designed to enhance teaching and learning experiences. It records live lectures, transcribes them using AI, and generates structured study materials like summaries, quizzes, and flashcards. With Benkyo, students can revisit lectures efficiently, and educators can offer more impactful learning experiences.
@@ -22,7 +21,6 @@
 - ⚙️ **Developer Friendly & Open Source**  
   Modular architecture, documented scripts, and MIT license make it easy to deploy, customize, and contribute.
 
----
 
 ## 📁 Project Structure
 
