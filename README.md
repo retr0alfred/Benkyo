@@ -147,6 +147,3 @@ Inspired by the vision of smarter, accessible education through technology.
 For questions, feedback, or collaborations, open an issue or reach out via GitHub.
 ```
 
----
-
-Let me know if you want this saved as a downloadable `.md` file or embedded into your repo!
