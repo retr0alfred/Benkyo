@@ -1,148 +1,124 @@
-# 📚 Benkyo — AI-Powered Learning Assistant
 
-**Benkyo** is an intelligent classroom assistant designed to enhance teaching and learning experiences. It records live lectures, transcribes them using AI, and generates structured study materials like summaries, quizzes, and flashcards. With Benkyo, students can revisit lectures efficiently, and educators can offer more impactful learning experiences.
+# Intelligent Student Assistant
 
----
+A comprehensive educational platform that empowers students and educators with AI-enhanced learning tools.
 
-## 🚀 Features
+## Overview
 
-- 🎙️ **Real-Time Lecture Recording & Transcription**  
-  Capture classroom audio and convert it into accurate, time-stamped text using speech-to-text AI.
+Intelligent Student Assistant is a web application designed to revolutionize the classroom experience by automatically recording, transcribing, and transforming lecture content into structured learning materials. The system supports three user roles:
 
-- 🧠 **Automatic Study Material Generation**  
-  Extracts summaries, multiple-choice questions, and flashcards from lecture content for improved revision and comprehension.
+### Students
+- Access AI-generated notes from class recordings
+- Study with automatically created flashcards and quizzes
+- Track assignments and receive reminders
+- Review blackboard photos captured during lectures
 
-- 🧾 **Structured Notes Output**  
-  Outputs structured transcripts and notes in an easy-to-read format, exportable for later use.
+### Staff
+- Start/stop class recordings with a simple interface
+- Enable automatic blackboard photo capture
+- Create and manage quizzes and assignments
+- Set reminders for students
 
-- 🌐 **Cross-Platform Web Interface**  
-  Built with modern tools like Vite, TypeScript, and Tailwind CSS for a smooth, responsive user experience.
+### Admins
+- Manage user accounts (students and staff)
+- Edit or delete content (notes, quizzes, etc.)
+- Configure system settings
+- Monitor system status
 
-- ⚙️ **Developer Friendly & Open Source**  
-  Modular architecture, documented scripts, and MIT license make it easy to deploy, customize, and contribute.
+## Features
 
+### Audio Recording & Processing
+- Automatic recording of class lectures (when activated by staff)
+- Transcription of audio to text
+- Structured formatting of transcriptions into searchable notes
 
-## 📁 Project Structure
+### Blackboard Photos
+- Optional automatic capture of blackboard images
+- Integration with corresponding lecture notes
+- Timestamped for easy reference
 
-```bash
-.
-├── index.html              # Entry point of the web interface
-├── start.sh                # Startup script for Linux/macOS
-├── start.ps1               # Startup script for Windows PowerShell
-├── package.json            # Node.js project metadata and scripts
-├── tsconfig.json           # TypeScript configuration
-├── tailwind.config.js      # Tailwind CSS settings
-├── vite.config.ts          # Vite development server configuration
-├── dependencies.txt        # 📌 Unified list of Python & Node dependencies
-├── requirements.txt        # Python-specific dependencies
-├── .eslintrc.cjs           # ESLint config for code linting
-├── .gitignore              # Git ignore rules
-└── src/                    # Application source code (React/TypeScript)
-    ├── main.tsx            # App entry point
-    ├── App.tsx             # Main React component
-    └── components/         # UI components
-```
+### AI-Generated Study Tools
+- Automatic flashcard generation from lecture content
+- Quiz creation based on lecture material
+- Intelligent content summarization
 
----
+### Assignments & Reminders
+- Staff can create and manage assignments
+- Automatic reminders for approaching deadlines
+- Students can track assignment progress
 
-## ⚙️ Installation & Setup
+## Getting Started
 
-> 💡 All dependencies (Node + Python) are listed in `dependencies.txt`.
+### Prerequisites
+- Node.js (latest LTS version recommended)
+- npm or yarn package manager
+- Modern web browser
 
-### 1. Clone the Repository
+### Installation
 
-```bash
-git clone https://github.com/retr0alfred/Benkyo.git
-cd Benkyo
-```
+1. Clone the repository
+   ```
+   git clone https://github.com/yourusername/intelligent-student-assistant.git
+   cd intelligent-student-assistant
+   ```
 
-### 2. Install Node.js Dependencies
+2. Install dependencies
+   ```
+   npm install
+   ```
 
-Make sure you have [Node.js](https://nodejs.org/) installed.
+3. Start the development server
+   ```
+   npm run dev
+   ```
 
-```bash
-npm install
-```
+4. Open your browser and navigate to `http://localhost:8080`
 
-### 3. Install Python Dependencies
+### Demo Accounts
 
-Make sure you have [Python 3.8+](https://www.python.org/) and `pip` installed.
+For demonstration purposes, you can use the following accounts:
 
-Using the comprehensive list:
+- Student: student@example.com / password
+- Staff: staff@example.com / password
+- Admin: admin@example.com / password
 
-```bash
-pip install -r dependencies.txt
-```
+## Technical Implementation
 
-Or the default Python-only list:
+### Frontend
+- React with TypeScript
+- Tailwind CSS for styling
+- Shadcn UI component library
+- TanStack React Query for data fetching
 
-```bash
-pip install -r requirements.txt
-```
+### Audio Processing
+- Browser MediaRecorder API for recording
+- Web Speech API or third-party service for transcription
 
-### 4. Start the App
+### AI Features
+- Natural language processing for content generation
+- Automated quiz generation algorithms
 
-#### On Linux/macOS:
+## Production Deployment
 
-```bash
-./start.sh
-```
+For production deployment, the following steps are recommended:
 
-#### On Windows (PowerShell):
+1. Build the application
+   ```
+   npm run build
+   ```
 
-```powershell
-.\start.ps1
-```
+2. Deploy the built files to your preferred hosting service
 
----
+3. Set up a backend API for data persistence and processing
+   - Options include Node.js, Python, or serverless functions
+   - Database for storing user data, recordings, and generated content
+   - Speech-to-text service integration
+   - AI service for content processing
 
-## 🧪 Tech Stack
+## Contributing
 
-| Layer      | Technology                        |
-|------------|-----------------------------------|
-| Frontend   | Vite + TypeScript + Tailwind CSS  |
-| Backend    | Python                            |
-| Runtime    | Bun (optional) or Node.js         |
-| Scripts    | Shell & PowerShell Startup Files  |
+Contributions are welcome! Please feel free to submit a Pull Request.
 
----
+## License
 
-## 📌 Dependencies
-
-All required libraries and tools are listed in `dependencies.txt`, including:
-
-- Node modules: `vite`, `tailwindcss`, `typescript`, etc.
-- Python packages: `openai`, `pydub`, `whisper`, `transformers`, `torch`, etc.
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. Fork this repository
-2. Create a feature branch: `git checkout -b new-feature`
-3. Commit your changes: `git commit -m 'Add new feature'`
-4. Push to the branch: `git push origin new-feature`
-5. Submit a pull request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.  
-Feel free to use, distribute, and modify — just give credit where it’s due. See the [LICENSE](LICENSE) file for details.
-
----
-
-## 🌟 Acknowledgements
-
-Built with ❤️ by retr0alfred and contributors.  
-Inspired by the vision of smarter, accessible education through technology.
-
----
-
-## 📬 Contact
-
-For questions, feedback, or collaborations, open an issue or reach out via GitHub.
-
+This project is licensed under the MIT License - see the LICENSE file for details.
