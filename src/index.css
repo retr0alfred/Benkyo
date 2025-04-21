@@ -1,0 +1,147 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 0 0% 10%; /* Near black for text */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 75% 28%; /* Darker Maroon */
+    --primary-foreground: 0 0% 100%; /* White text on maroon */
+
+    --secondary: 0 75% 95%; /* Very light maroon */
+    --secondary-foreground: 0 75% 28%; /* Darker Maroon text on light maroon */
+
+    --muted: 0 0% 96%; /* Light gray */
+    --muted-foreground: 0 0% 45%; /* Gray text */
+
+    --accent: 0 75% 95%; /* Very light maroon */
+    --accent-foreground: 0 75% 28%; /* Darker Maroon text on accent */
+
+    --destructive: 0 84% 60%; /* Red, kept similar */
+    --destructive-foreground: 0 0% 100%; /* White text on destructive */
+
+    --border: 0 0% 90%; /* Light gray border */
+    --input: 0 0% 90%; /* Light gray input */
+    --ring: 0 75% 28%; /* Darker Maroon ring */
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 75% 22%; /* Darker Maroon sidebar */
+    --sidebar-foreground: 0 0% 100%; /* White text on sidebar */
+    --sidebar-primary: 0 75% 18%; /* Even Darker maroon */
+    --sidebar-primary-foreground: 0 0% 100%; /* White text on sidebar primary */
+    --sidebar-accent: 0 75% 18%; /* Even Darker maroon accent */
+    --sidebar-accent-foreground: 0 0% 100%; /* White text on sidebar accent */
+    --sidebar-border: 0 75% 18%; /* Even Darker maroon border */
+    --sidebar-ring: 0 75% 30%; /* Less dark maroon ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .card-maroon {
+    @apply bg-white rounded-lg shadow-sm border-t-4 border-maroon-800 p-6;
+  }
+  
+  .btn-maroon {
+    @apply bg-maroon-800 text-white hover:bg-maroon-900 transition-colors;
+  }
+  
+  .input-maroon {
+    @apply border-2 border-maroon-200 focus:border-maroon-800 focus:ring-1 focus:ring-maroon-800 rounded-md;
+  }
+}
+
+@layer utilities {
+  .maroon-shadow {
+    box-shadow: 0 4px 14px rgba(120, 20, 20, 0.3);
+  }
+  
+  .maroon-gradient {
+    background: linear-gradient(135deg, #7a1515 0%, #5a1010 100%);
+  }
+  
+  .maroon-light-gradient {
+    background: linear-gradient(135deg, #f9e6e6 0%, #c95555 100%);
+  }
+
+  /* Add Tailwind classes for maroon-700, maroon-800, and maroon-900 */
+  .bg-maroon-50 {
+    background-color: #fef2f2;
+  }
+  .bg-maroon-100 {
+    background-color: #fee2e2;
+  }
+  .bg-maroon-200 {
+    background-color: #fecaca;
+  }
+  .bg-maroon-300 {
+    background-color: #fca5a5;
+  }
+  .bg-maroon-500 {
+    background-color: #ef4444;
+  }
+  .bg-maroon-700 {
+    background-color: #b91c1c;
+  }
+  .bg-maroon-800 {
+    background-color: #991b1b;
+  }
+  .bg-maroon-900 {
+    background-color: #7f1d1d;
+  }
+  .text-maroon-200 {
+    color: #fecaca;
+  }
+  .text-maroon-300 {
+    color: #fca5a5;
+  }
+  .text-maroon-500 {
+    color: #ef4444;
+  }
+  .text-maroon-700 {
+    color: #b91c1c;
+  }
+  .text-maroon-800 {
+    color: #991b1b;
+  }
+  .text-maroon-900 {
+    color: #7f1d1d;
+  }
+  .border-maroon-500 {
+    border-color: #ef4444;
+  }
+  .border-maroon-700 {
+    border-color: #b91c1c;
+  }
+  .border-maroon-800 {
+    border-color: #991b1b;
+  }
+  .hover\:bg-maroon-800:hover {
+    background-color: #991b1b;
+  }
+  .hover\:bg-maroon-900:hover {
+    background-color: #7f1d1d;
+  }
+  .hover\:text-maroon-900:hover {
+    color: #7f1d1d;
+  }
+}
